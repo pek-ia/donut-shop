@@ -7,7 +7,7 @@ public class DonutShop {
         // A default donut.  I can't guarantee it will suit your needs...
         Donut donut = new Donut();
 
-        // These are strings, not donuts.  Useless!
+        // These are strings, not donuts!  Useless!
         String[] donuts = {
                 "Fantasia de chocolade",
                 "Strawberry Dream"
@@ -30,7 +30,7 @@ public class DonutShop {
         mydonuts[0].setPrice( .9 * d.getPrice());
         System.out.printf( "Price: $%.2f\n", d.getPrice() );
 
-        System.out.println("Default donut using generated toString method: \n\t" + d);
+        System.out.println("Default donut using generated toString method: \n\t" + donut);
 
     }
 
