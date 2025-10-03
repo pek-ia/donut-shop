@@ -55,14 +55,10 @@ public class Donut {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Donut{");
-        sb.append("doughFlavor='").append(doughFlavor).append('\'');
-        sb.append(", fillingFlavor='").append(fillingFlavor).append('\'');
-        sb.append(", isFrosted=").append(isFrosted);
-        sb.append(", isFilled=").append(isFilled);
-        sb.append(", calories=").append(calories);
-        sb.append(", price=").append(price);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("A donut with ");
+        sb.append(doughFlavor).append(" flavored cake, ");
+        if (isFilled) sb.append(fillingFlavor).append(" filling, ");
+        if (isFrosted) sb.append("frosted " );
         return sb.toString();
     }
 }
